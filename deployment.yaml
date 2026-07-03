@@ -1,4 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: rajiv-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: rajiv-app
+  template:
+    metadata:
+      labels:
+        app: rajiv-app
+    spec:
+      containers:
+      - name: rajiv-app
+        image: 726941380719.dkr.ecr.ap-south-1.amazonaws.com/rajiv-app:1
+        ports:
+        - containerPort: 3000
