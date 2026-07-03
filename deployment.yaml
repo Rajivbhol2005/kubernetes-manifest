@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: rajiv-app
-        image: 726941380719.dkr.ecr.ap-south-1.amazonaws.com/rajiv-app:1
+        image: 726941380719.dkr.ecr.ap-south-1.amazonaws.com/rajiv-app:8
         ports:
         - containerPort: 3000
